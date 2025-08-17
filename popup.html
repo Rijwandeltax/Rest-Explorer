@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RestExplorer for Salesforce</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />        
+    <link rel="stylesheet" type="text/css" href="css/techdicer.css" /> 
+</head>
+<body>
+    <h3>Salesforce RestExplorer</h3>
+    <div class="input-field">
+        <label for="accessToken">Access Token:</label>
+        <input type="text" id="accessToken" placeholder="Enter Salesforce Token" />
+    </div>
+    <div class="input-field">
+        <label for="apiEndpoint">API Endpoint:</label>
+        <input type="text" id="apiEndpoint" placeholder="e.g., /services/data/vXX.X/sobjects/Account" />
+    </div>
+    <button id="exploreApi">Explore API</button>
+
+    <div id="responseContainer">
+        <h4>Response</h4>
+        <pre id="apiResponse"></pre>
+    </div>
+
+
+    <div class="instructions">
+        When you view a Salesforce page (lightning only) our icon will be injected 
+        into the right side of the screen.<br/>
+        <br/>     
+        Click this icon to open our menu. 
+        <img src="images/dewwowext-example.png" /> 
+      </div>
+      <div class="thank-you">
+          Thank you to the following people and projects:
+          <ul>
+            <li>Enrico Murru: https://www.salesforce.com/video/1777958/</li>
+            <li>Jszip: https://stuk.github.io/jszip/</li>
+            <li>Bootstrap: https://getbootstrap.com/</li>
+            <li>jQuery: https://jquery.com/</li>
+         </ul>
+      </div>
+      <div class="contact">
+        EJ Bantz: https://www.linkedin.com/in/ejbantz/
+        Project Home Page: https://ejbantz.github.io/dewwowext<br/>
+      </div>
+      <button id="addOrgButton"  type="button" class="btn btn-primary btn-sm">Add Org</button>
+
+    <script src="library/jquery-3.6.0.min.js"></script>
+    <script src="library/bootstrap.min.js"></script>
+    <script src="library/popup.js"></script>
+    <script src="library/techdicer.js"></script>
+</body>
+</html>
